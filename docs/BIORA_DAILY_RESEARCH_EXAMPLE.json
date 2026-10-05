@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "daily-default-20261002-en",
+  "date": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "language": "en",
+  "feed": "default",
+  "revision": 1,
+  "title": "Fictional research digest: signal and controls",
+  "summary": "Fictional integration fixture, not a publication or scientific evidence. A measured difference motivates examination of control conditions, and the final synthesis retains the unresolved causal explanation.",
+  "published_at": "2026-10-02T00:00:00Z",
+  "sources": [
+    {"id": "paper1", "title": "Fictional matched-sample study (not real data)", "url": "https://example.org/fictional-paper", "page_count": 2}
+  ],
+  "citations": [
+    {"node_key": "result1", "source_id": "paper1", "page": 1},
+    {"node_key": "integrated", "source_id": "paper1", "page": 1},
+    {"node_key": "controlled", "source_id": "paper1", "page": 1},
+    {"node_key": "local", "source_id": "paper1", "page": 1},
+    {"node_key": "discussion", "source_id": "paper1", "page": 2},
+    {"node_key": "assay1", "source_id": "paper1", "page": 1},
+    {"node_key": "assay2", "source_id": "paper1", "page": 1}
+  ],
+  "graph": {
+    "title": "Fictional question: is the signal difference reproducible?",
+    "detail": "Demonstration only. Mainline order is narrative progression, not an evidence edge.",
+    "claims": [
+      {"key": "result1", "kind": "conclusion", "text": "A scoped signal difference survives the illustrated controls, without proving causation.", "source_page": 1},
+      {"key": "integrated", "kind": "conclusion", "text": "The matched comparison and the independent control jointly support a bounded group difference.", "source_page": 1},
+      {"key": "controlled", "kind": "conclusion", "text": "The independent control constrains one preparation-based alternative, but not every confounder.", "source_page": 1},
+      {"key": "local", "kind": "observation", "text": "The fictional matched-group assay shows different signals under the stated measurement conditions.", "source_page": 1},
+      {"key": "discussion", "kind": "conclusion", "text": "DISCUSSION: the scoped finding motivates a causal follow-up; neither controls nor convergence establish the mechanism.", "source_page": 2}
+    ],
+    "atomic_experiments": [
+      {"key": "assay1", "title": "Fictional matched-group assay", "method": "Compare fictional treated and control groups using matched acquisition conditions.", "status": "recorded", "observed_result": "The fictional readouts differ. No numerical real-world result is asserted.", "source_page": 1},
+      {"key": "assay2", "title": "Fictional preparation-control assay", "method": "Repeat the comparison with a separate matched preparation control.", "status": "recorded", "observed_result": "The fictional control retains the scoped comparison under this preparation condition.", "source_page": 1}
+    ],
+    "evidence_links": [
+      {"atom_key": "assay1", "claim_key": "local", "kind": "supports", "explanation": "The matched acquisition comparison provides the measured group difference within this assay.", "limitations": "Fictional data; the comparison alone does not exclude preparation artifacts."},
+      {"atom_key": "assay2", "claim_key": "controlled", "kind": "supports", "explanation": "The independent matched preparation constrains this particular artifact route.", "limitations": "Fictional data; unmeasured confounders remain possible."}
+    ],
+    "claim_links": [
+      {"from_key": "local", "to_key": "controlled", "kind": "supports", "explanation": "The original comparison supplies the signal to be assessed against the separate control.", "limitations": "The original comparison is insufficient without the control evidence."},
+      {"from_key": "controlled", "to_key": "integrated", "kind": "supports", "explanation": "Constraining one concrete artifact makes the combined scoped interpretation more defensible.", "limitations": "This is an integrated interpretation, not a new measurement."},
+      {"from_key": "integrated", "to_key": "result1", "kind": "supports", "explanation": "The bounded convergence supports the top-level result under the studied conditions.", "limitations": "No causal mechanism or broader population claim follows automatically."},
+      {"from_key": "result1", "to_key": "discussion", "kind": "supports", "explanation": "The scoped result anchors the synthesis while leaving the causal follow-up unresolved.", "limitations": "Discussion must not be treated as an additional observed result."}
+    ],
+    "mainline": [
+      {"claim_key": "result1", "question": "Does the difference survive a relevant control?", "motivation": "First establish the measured difference and its experimental boundaries.", "origin": "inferred", "role": "result"},
+      {"claim_key": "discussion", "question": "What follows, and what remains unproven?", "motivation": "The bounded result motivates synthesis and a future causal test, not an automatic causal claim.", "origin": "inferred", "role": "discussion"}
+    ]
+  }
+}

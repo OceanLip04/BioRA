@@ -1,0 +1,26 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Local build output, app data, and diagnostics
+build/
+DerivedData/
+PersonalData/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.dSYM/
+*.xcuserstate
+*.xcuserdata/
+
+# Local secrets and OS/editor files
+.env
+.env.*
+!.env.example
+._*
+.DS_Store
+.AppleDouble/
+__MACOSX/
+.idea/
+.vscode/
